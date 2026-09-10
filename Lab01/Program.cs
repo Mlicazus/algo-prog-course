@@ -40,29 +40,29 @@
 // System.Console.WriteLine($"25 / 4 как int: {studentsPerGroupWrong}");
 // System.Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
 
-System.Console.WriteLine();
-System.Console.WriteLine("Способы собрать строку");
-string firstName = "Анна";
-string lastName = "Смирнова";
-// Способ 1
-string fullNameConcat = firstName + " " + lastName;
-// Способ 2
-string fullNameInterp = $"{firstName} {lastName}";
-// Способ 3
-string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
-System.Console.WriteLine(fullNameConcat);
-System.Console.WriteLine(fullNameInterp);
-System.Console.WriteLine(fullNameConcatMethod);
-System.Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
+// System.Console.WriteLine();
+// System.Console.WriteLine("Способы собрать строку");
+// string firstName = "Анна";
+// string lastName = "Смирнова";
+// // Способ 1
+// string fullNameConcat = firstName + " " + lastName;
+// // Способ 2
+// string fullNameInterp = $"{firstName} {lastName}";
+// // Способ 3
+// string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
+// System.Console.WriteLine(fullNameConcat);
+// System.Console.WriteLine(fullNameInterp);
+// System.Console.WriteLine(fullNameConcatMethod);
+// System.Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
 
-System.Console.WriteLine();
-System.Console.WriteLine("Константы");
-const double VatRate = 0.20;
-const string CollegeName = "ВФ ВолГУ";
-double productPrice = 1000;
-double priceWithVat = productPrice * (1 + VatRate);
-System.Console.WriteLine($"Учебное заведение: {CollegeName}");
-System.Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}):{priceWithVat}");
+// System.Console.WriteLine();
+// System.Console.WriteLine("Константы");
+// const double VatRate = 0.20;
+// const string CollegeName = "ВФ ВолГУ";
+// double productPrice = 1000;
+// double priceWithVat = productPrice * (1 + VatRate);
+// System.Console.WriteLine($"Учебное заведение: {CollegeName}");
+// System.Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}):{priceWithVat}");
 
 // 1 блок : Создаем переменные разных типов и выписываем в терминал
 
@@ -74,3 +74,9 @@ System.Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({V
 */
 
 // В 5 блоке мы попробовали конкатенацию и интерполяцию, в 6 константы
+
+int scholarship = 621;
+int monthlyExpenses = 620;
+const int MonthsInSemester = 4;
+System.Console.WriteLine($"К концу месяца останется: {scholarship - monthlyExpenses} руб.");
+System.Console.WriteLine($"К концу семестра останется: {(scholarship - monthlyExpenses) * MonthsInSemester} руб.");
