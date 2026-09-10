@@ -39,3 +39,38 @@
 // double studentsPerGroupCorrect = (double)totalStudents / groupsCount;
 // System.Console.WriteLine($"25 / 4 как int: {studentsPerGroupWrong}");
 // System.Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
+
+System.Console.WriteLine();
+System.Console.WriteLine("Способы собрать строку");
+string firstName = "Анна";
+string lastName = "Смирнова";
+// Способ 1
+string fullNameConcat = firstName + " " + lastName;
+// Способ 2
+string fullNameInterp = $"{firstName} {lastName}";
+// Способ 3
+string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
+System.Console.WriteLine(fullNameConcat);
+System.Console.WriteLine(fullNameInterp);
+System.Console.WriteLine(fullNameConcatMethod);
+System.Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
+
+System.Console.WriteLine();
+System.Console.WriteLine("Константы");
+const double VatRate = 0.20;
+const string CollegeName = "ВФ ВолГУ";
+double productPrice = 1000;
+double priceWithVat = productPrice * (1 + VatRate);
+System.Console.WriteLine($"Учебное заведение: {CollegeName}");
+System.Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}):{priceWithVat}");
+
+// 1 блок : Создаем переменные разных типов и выписываем в терминал
+
+
+/* 2-4 блоки : Решает арифметические задачи и выводим результат
+   Так же в 3 блоке мы используем неявное приведение типов
+   В то время как в 4 блоке явное приведение типов
+
+*/
+
+// В 5 блоке мы попробовали конкатенацию и интерполяцию, в 6 константы
