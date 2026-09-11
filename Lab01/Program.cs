@@ -75,8 +75,14 @@
 
 // В 5 блоке мы попробовали конкатенацию и интерполяцию, в 6 константы
 
-int scholarship = 621;
-int monthlyExpenses = 620;
-const int MonthsInSemester = 4;
-System.Console.WriteLine($"К концу месяца останется: {scholarship - monthlyExpenses} руб.");
-System.Console.WriteLine($"К концу семестра останется: {(scholarship - monthlyExpenses) * MonthsInSemester} руб.");
+// int scholarship = 621;
+// int monthlyExpenses = 620;
+// const int MonthsInSemester = 4;
+// System.Console.WriteLine($"К концу месяца останется: {scholarship - monthlyExpenses} руб.");
+// System.Console.WriteLine($"К концу семестра останется: {(scholarship - monthlyExpenses) * MonthsInSemester} руб.");
+
+int totalMinutes = 500;
+int minutesPerLesson = 45;
+int fullLessons = totalMinutes / minutesPerLesson;
+int lastLesson = totalMinutes % minutesPerLesson;
+System.Console.WriteLine($"{totalMinutes} минут = {fullLessons} полных занятий + {lastLesson} минут");
